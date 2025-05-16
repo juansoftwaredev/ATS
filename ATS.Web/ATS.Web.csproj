@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ATS.Application\ATS.Application.csproj" />
-    <ProjectReference Include="..\ATS.Domain\ATS.Domain.csproj" />
   </ItemGroup>
 
 </Project>

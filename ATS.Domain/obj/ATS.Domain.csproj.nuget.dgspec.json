@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\ATS\\ATS.Web\\ATS.Domain\\ATS.Domain.csproj": {}
+    "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Domain\\ATS.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Git\\ATS\\ATS.Web\\ATS.Domain\\ATS.Domain.csproj": {
+    "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Domain\\ATS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\ATS\\ATS.Web\\ATS.Domain\\ATS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Domain\\ATS.Domain.csproj",
         "projectName": "ATS.Domain",
-        "projectPath": "C:\\Git\\ATS\\ATS.Web\\ATS.Domain\\ATS.Domain.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Domain\\ATS.Domain.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\ATS\\ATS.Web\\ATS.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

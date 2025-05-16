@@ -9,7 +9,6 @@
       "ATS.Web/1.0.0": {
         "dependencies": {
           "ATS.Application": "1.0.0",
-          "ATS.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.11",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
         },

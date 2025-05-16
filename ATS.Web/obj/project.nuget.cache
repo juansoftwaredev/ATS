@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wgWd6peGNOg=",
+  "dgSpecHash": "HxXt2Re4xSU=",
   "success": true,
-  "projectFilePath": "C:\\Git\\ATS\\ATS.Web\\ATS.Web\\ATS.Web.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\Projects\\ATS\\ATS.Web\\ATS.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
