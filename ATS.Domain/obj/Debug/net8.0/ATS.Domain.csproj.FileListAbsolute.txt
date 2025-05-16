@@ -1,0 +1,11 @@
+C:\Git\ATS\ATS.Web\ATS.Domain\bin\Debug\net8.0\ATS.Domain.deps.json
+C:\Git\ATS\ATS.Web\ATS.Domain\bin\Debug\net8.0\ATS.Domain.dll
+C:\Git\ATS\ATS.Web\ATS.Domain\bin\Debug\net8.0\ATS.Domain.pdb
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.AssemblyInfoInputs.cache
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.AssemblyInfo.cs
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.csproj.CoreCompileInputs.cache
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.dll
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\refint\ATS.Domain.dll
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ATS.Domain.pdb
+C:\Git\ATS\ATS.Web\ATS.Domain\obj\Debug\net8.0\ref\ATS.Domain.dll

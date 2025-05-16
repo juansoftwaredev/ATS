@@ -1,0 +1,116 @@
+﻿@using ATS.Application.DTOs
+
+@model UpdateCandidateDto
+
+@{
+    var index = Model.Experiences is null || Model.Experiences.Count == 0 ? 0 : Model.Experiences.Count;
+}
+
+<h2>Edit Candidate</h2>
+<hr />
+
+<form method="post" asp-controller="candidates" asp-action="edit">
+    <div class="form-group mb-3">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "form-label" })
+        @Html.TextBoxFor(model => model.Name, htmlAttributes: new {@class = "form-control"})
+        @Html.ValidationMessageFor(model => model.Name, "", htmlAttributes: new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(model => model.Birthdate, htmlAttributes: new { @class = "form-label" })
+        <input type="date" name="Birthdate" id="Birthdate" asp-for="@Model.Birthdate" class="form-control" />
+        @Html.ValidationMessageFor(model => model.Birthdate, "", htmlAttributes: new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group mb-3">
+        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "form-label" })
+        @Html.TextBoxFor(model => model.Email, htmlAttributes: new { @class = "form-control", type = "email" })
+        @Html.ValidationMessageFor(model => model.Email, "", htmlAttributes: new { @class = "text-danger" })
+    </div>
+
+    <h2>Experiences</h2>
+    <hr />
+
+    <div class="mt-3" id="experiences">
+        @if (Model.Experiences != null && Model.Experiences.Count > 0)
+        {
+            @for (int i = 0; i < Model.Experiences.Count; i++)
+            {
+                <div class="card mb-3 experiencia-form">
+                    <div class="card-body row">
+                        <input type="hidden" asp-for="Experiences[@i].IdCandidateExperience" />
+                        <div class="col-md-6">
+                            <label asp-for="Experiences[@i].Company" class="form-label"></label>
+                            <input asp-for="Experiences[@i].Company" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="Experiences[@i].Job" class="form-label"></label>
+                            <input asp-for="Experiences[@i].Job" class="form-control" />
+                        </div>
+                        <div class="col-md-12">
+                            <label asp-for="Experiences[@i].Description" class="form-label"></label>
+                            <textarea asp-for="Experiences[@i].Description" class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="Experiences[@i].Salary" class="form-label"></label>
+                            <input asp-for="Experiences[@i].Salary" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="Experiences[@i].BeginDate" class="form-label"></label>
+                            <input asp-for="Experiences[@i].BeginDate" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="Experiences[@i].EndDate" class="form-label"></label>
+                            <input asp-for="Experiences[@i].EndDate" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+    <button type="button" class="btn btn-secondary mt-3" onclick="agregarExperiencia()">Add Experience</button>
+
+    <button type="submit" class="btn btn-success mt-3">Send</button>
+</form>
+
+@section Scripts {
+    <script>
+        let index = @index
+
+        function agregarExperiencia() {
+            const html = `
+            <div class="card mb-3 experiencia-form">
+                <div class="card-body row">
+                    <div class="col-md-6">
+                        <label class="form-label">Company</label>
+                        <input name="Experiences[${index}].Company" class="form-control" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Job</label>
+                        <input name="Experiences[${index}].Job" class="form-control" />
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label">Description</label>
+                        <textarea name="Experiences[${index}].Description" class="form-control"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Salary</label>
+                        <input type="number" step="0.01" name="Experiences[${index}].Salary" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Begin Date</label>
+                        <input type="date" name="Experiences[${index}].BeginDate" class="form-control" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">End Date</label>
+                        <input type="date" name="Experiences[${index}].EndDate" class="form-control" />
+                    </div>
+                </div>
+            </div>`;
+
+            document.getElementById("experiences").insertAdjacentHTML("beforeend", html);
+            index++;
+        }
+    </script>
+}

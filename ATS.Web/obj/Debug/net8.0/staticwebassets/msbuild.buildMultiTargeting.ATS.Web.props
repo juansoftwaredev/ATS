@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ATS.Web.props" />
+</Project>

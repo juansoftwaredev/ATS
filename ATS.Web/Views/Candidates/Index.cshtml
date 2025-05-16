@@ -1,0 +1,31 @@
+﻿@using ATS.Application.DTOs
+
+@model IEnumerable<CandidateDto>
+
+<h2>Candidates List</h2>
+<a asp-action="Create">New Candidate</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Birthdate</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.Email</td>
+                <td>@c.Birthdate</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@c.IdCandidate">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@c.IdCandidate">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
